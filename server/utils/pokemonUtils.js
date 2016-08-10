@@ -31,8 +31,8 @@ module.exports = {
 	},
 
 	getCandy: (pokemon, candies) => {
-		for(let j = 0; j < candies.length; j++){
-			let candy = candies[j];
+		for(var j = 0; j < candies.length; j++){
+			var candy = candies[j];
 
 			if(candy.family_id.toString() === props.pokemonFamilyIdByPokedexNum[pokemon.pokemon_id.toString()]){
 				return candy.candy;
